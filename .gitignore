@@ -1,0 +1,5 @@
+# Apps
+apps/
+
+# Compiled modules
+*.o

@@ -13,7 +13,9 @@ To clone and run this application, you'll need Git and GNU/make installed on you
 - `make` to compile the programs.
 - `./apps/{PROGRAM}` where **{PROGRAM}** is the desired program.
 
-- **Optional** you can run `make clean` to delete all compiled programs.
+### Optional
+
+- you can run `make clean` to delete all compiled programs.
 
 ## Tools:
 

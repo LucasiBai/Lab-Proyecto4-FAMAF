@@ -1,14 +1,20 @@
+# Diretories
 PROGRAMS_DIR=apps/
 SOURCE_DIR=src/
 OBJ_DIR=$(SOURCE_DIR)libs/
 
+# Commands
 CC=gcc
 FLAGS= -Wall -Wextra -Wpedantic -std=c99
 DEBUG= -g
+
+# Files
 OBJ= utils.o
 TARGET=ejercicio01 
 
 .PHONY= clean
+
+# Main Targets
 
 compile: create_programs_dir $(TARGET)
 	@echo "All Compiled! Happy Hacking"
@@ -25,5 +31,5 @@ $(OBJ_DIR)$(OBJ): %.o: %.c
 	@echo "Compiled $@ from $<"
 
 clean:
-	@rm -rf $(OBJ_DIR)*.o $(PROGRAMS_DIR)
+	@rm -rf $(OBJ_DIR)*.o $(PROGRAMS_DIR) 
 	@echo "All Clean!"

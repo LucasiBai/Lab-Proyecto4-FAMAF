@@ -1,7 +1,12 @@
 # include "libs/utils.h"
 
-int main(void){
-  hola_hasta(2);
+int main (void)
+{
+  int n;
+
+  n = pedir_entero ("n");
+
+  hola_hasta (n);
 
   return 0;
 }
