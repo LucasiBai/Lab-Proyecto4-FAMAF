@@ -1,0 +1,1 @@
+void hola_hasta(int n);
