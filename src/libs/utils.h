@@ -25,3 +25,5 @@ div_t division(int x, int y);
 void pedir_arreglo(int n_max, int a[]);
 
 void imprimir_arreglo(int n_max, int a[]);
+
+int sumatoria(int tam, int a[]);

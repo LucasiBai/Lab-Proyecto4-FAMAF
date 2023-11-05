@@ -146,3 +146,21 @@ void imprimir_arreglo(int n_max, int a[])
     i++;
   }
 }
+
+int sumatoria(int tam, int a[])
+{
+  int sum, i;
+  assert(tam >= 0);
+
+  sum = 0;
+  i = 0;
+
+  while (i < tam)
+  {
+    sum = sum + a[i];
+
+    i++;
+  }
+
+  return sum;
+}
