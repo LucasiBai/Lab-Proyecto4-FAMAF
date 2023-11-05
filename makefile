@@ -10,7 +10,7 @@ DEBUG= -g
 
 # Files
 OBJ= utils.o
-TARGET=ejercicio01 
+TARGET=ejercicio01 minimo absoluto intercambio
 
 .PHONY= clean
 

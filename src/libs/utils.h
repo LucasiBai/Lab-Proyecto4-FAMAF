@@ -1,3 +1,9 @@
-int pedir_entero (char* name);
+int pedir_entero(char *name);
 
-void hola_hasta (int n);
+void imprimir_entero(int x, char *name);
+
+void hola_hasta(int n);
+
+int minimo(int x, int y);
+
+int absoluto(int x);
