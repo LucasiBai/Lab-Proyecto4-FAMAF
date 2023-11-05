@@ -66,3 +66,21 @@ int absoluto(int x)
 
   return abs;
 }
+
+int suma_hasta(int n)
+{
+  int i, sum;
+  assert(n >= 0);
+
+  sum = 0;
+  i = 0;
+
+  while (i <= n)
+  {
+    sum = sum + i;
+
+    i++;
+  }
+
+  return sum;
+}
