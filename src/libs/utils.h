@@ -1,8 +1,12 @@
 #include <stdbool.h>
 
+#include "models.h"
+
 int pedir_entero(char *name);
 
 void imprimir_entero(int x, char *name);
+
+void imprimir_division(div_t div);
 
 char pedir_caracter(char *name);
 
@@ -15,3 +19,5 @@ int absoluto(int x);
 int suma_hasta(int n);
 
 bool es_vocal(char letra);
+
+div_t division(int x, int y);

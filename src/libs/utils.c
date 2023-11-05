@@ -19,6 +19,11 @@ void imprimir_entero(int x, char *name)
   printf("El valor de %s es %d\n", name, x);
 }
 
+void imprimir_division(div_t div)
+{
+  printf("El cociente resultante es de %d y su resto %d\n", div.cociente, div.resto);
+}
+
 char pedir_caracter(char *name)
 {
   char a;
@@ -101,4 +106,15 @@ bool es_vocal(char letra)
   char l = tolower(letra);
 
   return l == 'a' || l == 'e' || l == 'i' || l == 'o' || l == 'u';
+}
+
+div_t division(int x, int y)
+{
+  div_t div;
+  assert(x >= 0 && y > 0);
+
+  div.cociente = x / y;
+  div.resto = x % y;
+
+  return div;
 }
