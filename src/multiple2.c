@@ -8,20 +8,23 @@ int main(void)
 
   int X = pedir_entero("x");
   int Y = pedir_entero("y");
+  int Z = pedir_entero("z");
 
   x = X;
   y = Y;
+  z = Z;
 
-  assert(x == X && y == Y);
+  assert(x == X && y == Y && z == Z);
 
-  z = x;
   x = y;
-  y = z;
+  y = y + X + z;
+  z = Y + X;
 
-  assert(x == Y && y == X);
+  assert(x == Y && y == Y + X + Z && z == Y + X);
 
   imprimir_entero(x, "x");
   imprimir_entero(y, "y");
+  imprimir_entero(z, "z");
 
   return 0;
 }

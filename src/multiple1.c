@@ -4,7 +4,7 @@
 
 int main(void)
 {
-  int x, y, z;
+  int x, y;
 
   int X = pedir_entero("x");
   int Y = pedir_entero("y");
@@ -14,11 +14,10 @@ int main(void)
 
   assert(x == X && y == Y);
 
-  z = x;
-  x = y;
-  y = z;
+  x = x + 1;
+  y = X + y;
 
-  assert(x == Y && y == X);
+  assert(x == X + 1 && y == X + Y);
 
   imprimir_entero(x, "x");
   imprimir_entero(y, "y");
