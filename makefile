@@ -10,7 +10,7 @@ DEBUG= -g
 
 # Files
 OBJ= utils.o
-TARGET=ejercicio01 minimo absoluto intercambio multiple1 multiple2 suma_hasta
+TARGET=ejercicio01 minimo absoluto intercambio multiple1 multiple2 suma_hasta vocales
 
 .PHONY= clean
 

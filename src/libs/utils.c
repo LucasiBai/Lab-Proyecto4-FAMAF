@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
+#include <ctype.h>
 
 #include "utils.h"
 
@@ -16,6 +17,16 @@ int pedir_entero(char *name)
 void imprimir_entero(int x, char *name)
 {
   printf("El valor de %s es %d\n", name, x);
+}
+
+char pedir_caracter(char *name)
+{
+  char a;
+
+  printf("Ingrese un valor para %s\n", name);
+  scanf("%c", &a);
+
+  return a;
 }
 
 void hola_hasta(int n)
@@ -83,4 +94,11 @@ int suma_hasta(int n)
   }
 
   return sum;
+}
+
+bool es_vocal(char letra)
+{
+  char l = tolower(letra);
+
+  return l == 'a' || l == 'e' || l == 'i' || l == 'o' || l == 'u';
 }
