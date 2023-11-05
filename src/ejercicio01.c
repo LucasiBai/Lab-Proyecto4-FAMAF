@@ -10,3 +10,18 @@ int main(void)
 
   return 0;
 }
+
+/*
+Ingrese un valor para n
+5
+Hola
+Hola
+Hola
+Hola
+Hola
+
+Ingrese un valor para n
+2
+Hola
+Hola
+*/

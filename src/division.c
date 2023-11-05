@@ -14,3 +14,17 @@ int main(void)
 
   return 0;
 }
+
+/*
+Ingrese un valor para x
+5
+Ingrese un valor para y
+2
+El cociente resultante es de 2 y su resto 1
+
+Ingrese un valor para x
+10
+Ingrese un valor para y
+2
+El cociente resultante es de 5 y su resto 0
+*/

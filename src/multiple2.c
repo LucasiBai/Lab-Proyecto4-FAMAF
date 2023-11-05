@@ -28,3 +28,25 @@ int main(void)
 
   return 0;
 }
+
+/*
+Ingrese un valor para x
+23
+Ingrese un valor para y
+5
+Ingrese un valor para z
+26
+El valor de x es 5
+El valor de y es 54
+El valor de z es 28
+
+Ingrese un valor para x
+5
+Ingrese un valor para y
+2
+Ingrese un valor para z
+74
+El valor de x es 2
+El valor de y es 81
+El valor de z es 7
+*/

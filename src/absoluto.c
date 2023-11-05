@@ -12,3 +12,13 @@ int main(void)
 
   return 0;
 }
+
+/*
+Ingrese un valor para x
+5
+El valor de absoluto de x es 5
+
+Ingrese un valor para x
+-10
+El valor de absoluto de x es 10
+*/

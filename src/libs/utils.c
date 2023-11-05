@@ -118,3 +118,31 @@ div_t division(int x, int y)
 
   return div;
 }
+
+void pedir_arreglo(int n_max, int a[])
+{
+  int i = 0;
+
+  assert(n_max > 0);
+
+  while (i < n_max)
+  {
+    printf("Ingrese un valor para el arreglo en la posición %d\n", i);
+    scanf("%d", &a[i]);
+
+    i++;
+  }
+}
+
+void imprimir_arreglo(int n_max, int a[])
+{
+  assert(n_max > 0);
+
+  int i = 0;
+
+  while (i < n_max)
+  {
+    printf("El valor para el arreglo en la posición %d es %d\n", i, a[i]);
+    i++;
+  }
+}

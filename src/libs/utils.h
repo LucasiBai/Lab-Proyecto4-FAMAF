@@ -21,3 +21,7 @@ int suma_hasta(int n);
 bool es_vocal(char letra);
 
 div_t division(int x, int y);
+
+void pedir_arreglo(int n_max, int a[]);
+
+void imprimir_arreglo(int n_max, int a[]);

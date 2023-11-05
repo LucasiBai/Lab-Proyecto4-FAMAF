@@ -13,3 +13,17 @@ int main(void)
 
   return 0;
 }
+
+/*
+Ingrese un valor para x
+4
+Ingrese un valor para y
+8
+El valor de minimo entre x e y es 4
+
+Ingrese un valor para x
+10
+Ingrese un valor para y
+33
+El valor de minimo entre x e y es 10
+*/

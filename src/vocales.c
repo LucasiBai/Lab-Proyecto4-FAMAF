@@ -23,3 +23,13 @@ int main(void)
 
   return 0;
 }
+
+/*
+Ingrese un valor para el caracter a
+a
+El valor a es vocal.
+
+Ingrese un valor para el caracter a
+E
+El valor E es vocal.
+*/

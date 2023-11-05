@@ -24,3 +24,19 @@ int main(void)
 
   return 0;
 }
+
+/*
+Ingrese un valor para x
+3
+Ingrese un valor para y
+2
+El valor de x es 4
+El valor de y es 5
+
+Ingrese un valor para x
+75
+Ingrese un valor para y
+32
+El valor de x es 76
+El valor de y es 107
+*/
