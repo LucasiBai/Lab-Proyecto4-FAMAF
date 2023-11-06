@@ -31,3 +31,5 @@ int sumatoria(int tam, int a[]);
 bool todos_pares(int tam, int a[]);
 
 bool existe_multiplo(int m, int tam, int a[]);
+
+void intercambiar(int tam, int a[], int i, int j);

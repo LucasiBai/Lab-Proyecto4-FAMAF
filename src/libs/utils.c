@@ -85,8 +85,9 @@ int absoluto(int x)
 
 int suma_hasta(int n)
 {
-  int i, sum;
   assert(n >= 0);
+
+  int i, sum;
 
   sum = 0;
   i = 0;
@@ -110,8 +111,9 @@ bool es_vocal(char letra)
 
 div_t division(int x, int y)
 {
-  div_t div;
   assert(x >= 0 && y > 0);
+
+  div_t div;
 
   div.cociente = x / y;
   div.resto = x % y;
@@ -121,9 +123,9 @@ div_t division(int x, int y)
 
 void pedir_arreglo(int n_max, int a[])
 {
-  int i = 0;
-
   assert(n_max > 0);
+
+  int i = 0;
 
   while (i < n_max)
   {
@@ -149,8 +151,9 @@ void imprimir_arreglo(int n_max, int a[])
 
 int sumatoria(int tam, int a[])
 {
-  int sum, i;
   assert(tam >= 0);
+
+  int sum, i;
 
   sum = 0;
   i = 0;
@@ -198,4 +201,17 @@ bool existe_multiplo(int m, int tam, int a[])
   }
 
   return false;
+}
+
+void intercambiar(int tam, int a[], int i, int j)
+{
+  assert(0 <= i && i < tam && 0 <= j && j < tam);
+
+  int I, J;
+
+  I = a[i];
+  J = a[j];
+
+  a[i] = J;
+  a[j] = I;
 }
