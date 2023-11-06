@@ -164,3 +164,38 @@ int sumatoria(int tam, int a[])
 
   return sum;
 }
+
+bool todos_pares(int tam, int a[])
+{
+  assert(tam > 0);
+
+  int i = 0;
+
+  while (i < tam)
+  {
+    if (a[i] % 2 != 0)
+    {
+      return false;
+    }
+
+    i++;
+  }
+
+  return true;
+}
+
+bool existe_multiplo(int m, int tam, int a[])
+{
+  int i = 0;
+
+  while (i < tam)
+  {
+    if (a[i] % m == 0)
+    {
+      return true;
+    }
+    i++;
+  }
+
+  return false;
+}

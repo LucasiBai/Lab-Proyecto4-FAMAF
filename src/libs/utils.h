@@ -27,3 +27,7 @@ void pedir_arreglo(int n_max, int a[]);
 void imprimir_arreglo(int n_max, int a[]);
 
 int sumatoria(int tam, int a[]);
+
+bool todos_pares(int tam, int a[]);
+
+bool existe_multiplo(int m, int tam, int a[]);
