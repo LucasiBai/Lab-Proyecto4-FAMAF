@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include <ctype.h>
+#include <limits.h>
 
 #include "utils.h"
 
@@ -214,4 +215,48 @@ void intercambiar(int tam, int a[], int i, int j)
 
   a[i] = J;
   a[j] = I;
+}
+
+int minimo_pares(int tam, int a[])
+{
+  assert(tam > 0);
+
+  int min, i;
+
+  i = 0;
+  min = INT_MAX;
+
+  while (i < tam)
+  {
+    if (
+        a[i] % 2 == 0)
+    {
+      min = minimo(min, a[i]);
+    }
+    i++;
+  }
+
+  return min;
+}
+
+int minimo_impares(int tam, int a[])
+{
+  assert(tam > 0);
+
+  int min, i;
+
+  i = 0;
+  min = INT_MAX;
+
+  while (i < tam)
+  {
+    if (
+        a[i] % 2 != 0)
+    {
+      min = minimo(min, a[i]);
+    }
+    i++;
+  }
+
+  return min;
 }
