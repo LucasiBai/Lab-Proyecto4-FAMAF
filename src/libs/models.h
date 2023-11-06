@@ -10,3 +10,10 @@ typedef struct
   int iguales;
   int mayores;
 } comp_t;
+
+typedef struct
+{
+  float maximo;
+  float minimo;
+  float promedio;
+} datos_t;

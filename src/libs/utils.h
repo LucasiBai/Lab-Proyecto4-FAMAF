@@ -26,6 +26,10 @@ void pedir_arreglo(int n_max, int a[]);
 
 void imprimir_arreglo(int n_max, int a[]);
 
+void pedir_arreglo_float(int n_max, float a[]);
+
+void imprimir_arreglo_float(int n_max, float a[]);
+
 int sumatoria(int tam, int a[]);
 
 bool todos_pares(int tam, int a[]);
@@ -43,3 +47,7 @@ int prim_iguales(int tam, int a[]);
 comp_t cuantos(int tam, int a[], int elem);
 
 void imprimir_cuantos(comp_t c, int elem);
+
+datos_t stats(int tam, float a[]);
+
+void imprimir_stats(datos_t d);

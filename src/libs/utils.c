@@ -150,6 +150,34 @@ void imprimir_arreglo(int n_max, int a[])
   }
 }
 
+void pedir_arreglo_float(int n_max, float a[])
+{
+  assert(n_max > 0);
+
+  int i = 0;
+
+  while (i < n_max)
+  {
+    printf("Ingrese un valor para el arreglo en la posición %d\n", i);
+    scanf("%f", &a[i]);
+
+    i++;
+  }
+}
+
+void imprimir_arreglo_float(int n_max, float a[])
+{
+  assert(n_max > 0);
+
+  int i = 0;
+
+  while (i < n_max)
+  {
+    printf("El valor para el arreglo en la posición %d es %f\n", i, a[i]);
+    i++;
+  }
+}
+
 int sumatoria(int tam, int a[])
 {
   assert(tam >= 0);
@@ -316,4 +344,40 @@ comp_t cuantos(int tam, int a[], int elem)
 void imprimir_cuantos(comp_t c, int elem)
 {
   printf("Hay %d elementos menores a %d.\nHay %d elementos iguales a %d.\nHay %d elementos mayores a %d.\n", c.menores, elem, c.iguales, elem, c.mayores, elem);
+}
+
+datos_t stats(int tam, float a[])
+{
+  assert(tam > 0);
+
+  datos_t d;
+  int i = 0;
+  float sum = 0;
+
+  d.maximo = INT_MIN;
+  d.minimo = INT_MAX;
+
+  while (i < tam)
+  {
+    if (d.maximo < a[i])
+    {
+      d.maximo = a[i];
+    }
+    if (d.minimo > a[i])
+    {
+      d.minimo = a[i];
+    }
+
+    sum = sum + a[i];
+    i++;
+  }
+
+  d.promedio = sum / tam;
+
+  return d;
+}
+
+void imprimir_stats(datos_t d)
+{
+  printf("El Minimo del arreglo es %f.\nEl Maximo del arreglo es %f.\nEl Promedio de los elementos del arreglo es %f.\n", d.minimo, d.maximo, d.promedio);
 }
