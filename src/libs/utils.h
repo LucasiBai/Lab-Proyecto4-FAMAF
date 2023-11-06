@@ -30,6 +30,8 @@ void pedir_arreglo_float(int n_max, float a[]);
 
 void imprimir_arreglo_float(int n_max, float a[]);
 
+void pedir_arreglo_asoc(int n_max, asoc a[]);
+
 int sumatoria(int tam, int a[]);
 
 bool todos_pares(int tam, int a[]);
@@ -51,3 +53,9 @@ void imprimir_cuantos(comp_t c, int elem);
 datos_t stats(int tam, float a[]);
 
 void imprimir_stats(datos_t d);
+
+bool asoc_existe(int tam, asoc a[], clave_t c);
+
+int nesimo_primo(int N);
+
+bool es_primo(int n);

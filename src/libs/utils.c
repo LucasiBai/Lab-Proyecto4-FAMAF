@@ -178,6 +178,21 @@ void imprimir_arreglo_float(int n_max, float a[])
   }
 }
 
+void pedir_arreglo_asoc(int n_max, asoc a[])
+{
+  assert(n_max > 0);
+
+  int i = 0;
+  while (i < n_max)
+  {
+    printf("Ingrese la clave de la posicion %d del arreglo\n", i);
+    scanf(" %c", &a[i].clave);
+    printf("Ingrese el valor de la posicion %d del arreglo\n", i);
+    scanf("%d", &a[i].valor);
+    i++;
+  }
+}
+
 int sumatoria(int tam, int a[])
 {
   assert(tam >= 0);
@@ -380,4 +395,62 @@ datos_t stats(int tam, float a[])
 void imprimir_stats(datos_t d)
 {
   printf("El Minimo del arreglo es %f.\nEl Maximo del arreglo es %f.\nEl Promedio de los elementos del arreglo es %f.\n", d.minimo, d.maximo, d.promedio);
+}
+
+bool asoc_existe(int tam, asoc a[], clave_t c)
+{
+  assert(tam > 0);
+
+  int i = 0;
+
+  while (i < tam)
+  {
+    if (a[i].clave == c)
+    {
+      return true;
+    }
+    i++;
+  }
+
+  return false;
+}
+
+bool es_primo(int n)
+{
+  int i = 2;
+
+  if (n <= 1)
+  {
+    return false;
+  }
+
+  while (i * i <= n)
+  {
+    if (n % i == 0)
+    {
+      return false;
+    }
+    i++;
+  }
+
+  return true;
+}
+
+int nesimo_primo(int N)
+{
+  int i = 0;
+  int j = i;
+  int p;
+
+  while (j != N)
+  {
+    if (es_primo(i))
+    {
+      j++;
+      p = i;
+    }
+    i++;
+  }
+
+  return p;
 }
