@@ -280,3 +280,40 @@ int prim_iguales(int tam, int a[])
 
   return l;
 }
+
+comp_t cuantos(int tam, int a[], int elem)
+{
+  assert(tam > 0);
+
+  int i = 0;
+  comp_t c;
+
+  c.iguales = 0;
+  c.mayores = 0;
+  c.menores = 0;
+
+  while (i < tam)
+  {
+    if (a[i] < elem)
+    {
+      c.menores++;
+    }
+    else if (a[i] > elem)
+    {
+      c.mayores++;
+    }
+    else
+    {
+      c.iguales++;
+    }
+
+    i++;
+  }
+
+  return c;
+}
+
+void imprimir_cuantos(comp_t c, int elem)
+{
+  printf("Hay %d elementos menores a %d.\nHay %d elementos iguales a %d.\nHay %d elementos mayores a %d.\n", c.menores, elem, c.iguales, elem, c.mayores, elem);
+}

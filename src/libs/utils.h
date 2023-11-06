@@ -39,3 +39,7 @@ int minimo_pares(int tam, int a[]);
 int minimo_impares(int tam, int a[]);
 
 int prim_iguales(int tam, int a[]);
+
+comp_t cuantos(int tam, int a[], int elem);
+
+void imprimir_cuantos(comp_t c, int elem);
