@@ -260,3 +260,23 @@ int minimo_impares(int tam, int a[])
 
   return min;
 }
+
+int prim_iguales(int tam, int a[])
+{
+  assert(tam > 0);
+
+  int i, f, l;
+
+  i = 0;
+  f = a[i];
+
+  l = 0;
+
+  while (i < tam && a[i] == f)
+  {
+    l++;
+    i++;
+  }
+
+  return l;
+}
